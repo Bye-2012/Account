@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabTitles">
+        <item>记账</item>
+        <item>流水</item>
+        <item>统计</item>
+    </string-array>
+    <string-array name="types_out">
+        <item>日常</item>
+        <item>请客</item>
+        <item>烟酒</item>
+        <item>自用</item>
+        <item>礼物</item>
+        <item>房租</item>
+        <item>水电费</item>
+        <item>公共交通</item>
+        <item>出租</item>
+        <item>学习用品</item>
+        <item>生活用品</item>
+    </string-array>
+    <string-array name="types_in">
+        <item>工资</item>
+        <item>外快</item>
+    </string-array>
+
+</resources>
