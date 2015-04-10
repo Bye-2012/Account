@@ -10,11 +10,91 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             ></Spinner>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00f"
+            android:padding="12dp"
+            >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="收入："
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="111"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="支出："
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="333"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="结余："
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="555"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Button
+                android:id="@+id/btn_forward"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="之前"
+                />
+        <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="之后"
+                />
+    </LinearLayout>
+
     <ListView
             android:id="@+id/listView_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
             ></ListView>
+
 
 </LinearLayout>

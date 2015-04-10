@@ -22,10 +22,10 @@ public class MySQLiteOpenHelper extends SQLiteOpenHelper {
 	//当数据库被首次创建时执行该方法，一般将创建表等初始化操作在该方法中执行
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		db.execSQL("CREATE TABLE IF NOT EXISTS tb_income(_id INTEGER PRIMARY KEY,money,type,date,time,comments)");
-		db.execSQL("CREATE TABLE IF NOT EXISTS tb_expand(_id INTEGER PRIMARY KEY,money,type,detail,date,time,comments)");
+		db.execSQL("CREATE TABLE IF NOT EXISTS tb_income(_id INTEGER PRIMARY KEY,money,type,detail,dates,time,comments)");
+		db.execSQL("CREATE TABLE IF NOT EXISTS tb_expand(_id INTEGER PRIMARY KEY,money,type,detail,dates,time,comments)");
 	}
-	//当打开数据库时传入的版本号与当前的版本号不同时会调用该方法
+	//当打开数据库时传入的版本号与当前的版本号不同时会调用该方
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		if (newVersion > oldVersion) {

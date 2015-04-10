@@ -2,14 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+        >
 
     <RadioGroup
+            android:id="@+id/radioGroup"
             android:padding="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
+
         <RadioButton
                 android:id="@+id/radioBtn_out"
                 android:layout_width="0dp"
@@ -17,6 +20,7 @@
                 android:layout_height="wrap_content"
                 android:text="支出"
                 />
+
         <RadioButton
                 android:id="@+id/radioBtn_in"
                 android:layout_width="0dp"
@@ -26,14 +30,34 @@
                 />
     </RadioGroup>
 
-    <EditText
-            android:id="@+id/editText_money"
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="请输入金额"
+            android:orientation="horizontal"
             android:padding="12dp"
-            />
+            >
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="金额"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+        <EditText
+                android:id="@+id/editText_money"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="请输入金额"
+                android:padding="12dp"
+                />
+
+    </LinearLayout>
+
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -41,6 +65,7 @@
             android:orientation="horizontal"
             android:padding="12dp"
             >
+
         <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -65,41 +90,92 @@
             android:orientation="horizontal"
             android:padding="12dp"
             >
+
         <TextView
-                android:id="@+id/textView_date"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:text="日期"
                 android:gravity="center"
+                android:textSize="20sp"
+                />
+
+        <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="点击获取日期"
+                android:gravity="center"
                 android:clickable="true"
                 android:textSize="20sp"
                 />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            >
+
         <TextView
-                android:id="@+id/textView_time"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:text="时间"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+        <TextView
+                android:id="@+id/textView_time"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="点击获取时间"
                 android:clickable="true"
                 android:textSize="20sp"
                 />
+
     </LinearLayout>
 
-    <EditText
-            android:id="@+id/editText_comment"
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:hint="备注"
+            android:orientation="horizontal"
             android:padding="12dp"
-            />
+            >
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="备注"
+                android:gravity="center"
+                android:textSize="20sp"
+                />
+
+        <EditText
+                android:id="@+id/editText_comment"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="备注"
+                android:padding="12dp"
+                />
+
+    </LinearLayout>
+
+
     <Button
             android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="保存"
-            android:padding="12dp"
+            android:padding="20dp"
             />
 </LinearLayout>

@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.view.View;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.ResType;
 import com.lidroid.xutils.view.annotation.ResInject;
@@ -38,7 +36,8 @@ public class MainActivity extends FragmentActivity {
 
         actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(false);
 
         for (int i = 0; i <tabTitles.length; i++) {
             actionBar.addTab(actionBar.newTab().setText(tabTitles[i]).setTabListener(new ActionBar.TabListener() {
@@ -76,13 +75,5 @@ public class MainActivity extends FragmentActivity {
             public void onPageScrollStateChanged(int i) {
             }
         });
-    }
-
-    public void clickButton(View view){
-        switch (view.getId()){
-            case R.id.textView_date:
-                Log.i("1111", "111");
-                break;
-        }
     }
 }
